@@ -1,0 +1,14 @@
+[Unit] 
+Description=Telegram Bot 
+After=network.target
+
+[Service] 
+User=pubgmobile 
+Group=pubgmobile
+
+WorkingDirectory=/home/(username)/(bot-folder)/ 
+Environment="PYTHONPATH=/home/(username)/(bot-folder)/" 
+ExecStart=/home/pubgmobile/Gonal Shop/.venv/bin/python /home/pubgmobile/Gonal Shop/main.py
+
+[Install] 
+WantedBy=multi-user.target
