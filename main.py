@@ -40,7 +40,7 @@ item_editor = item_menu.ItemEditor(-1)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     if database.input_user(message.chat.id) is True:
-        msg = "Добро пожаловать! Если не появились кнопки, напишите /start.Cлито в @END_Software"
+        msg = "Добро пожаловать! Если не появились кнопки, напишите /start"
     else:
         msg = f"С возвращением, @{message.from_user.username}!"
 
