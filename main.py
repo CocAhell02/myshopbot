@@ -18,7 +18,7 @@ from src import gonal_stat as statistics
 from src import gonal_support as support
 from src.gonal_const import *
 
-bot = telebot.AsyncTeleBot(admin.TOKEN, parse_mode="MARKDOWN")
+bot = telebot.TeleBot(admin.TOKEN, parse_mode="MARKDOWN")
 
 admin_keyboard = admin.admin_keyboard
 user_keyboard = admin.user_keyboard
